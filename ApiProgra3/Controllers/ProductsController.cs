@@ -11,20 +11,20 @@ namespace ApiProgra3.Controllers
     public class ProductsController : ControllerBase
     {
 
-        ProductsApi productsApi = new Negocio.ProductsApi();
 
         // GET: api/<ValuesController>
         [HttpGet]
         public List<Product> Get()
         {
-            return productsApi.getAll();
+            List<Product> info = Datos.BuscarTodos();
+            return info;
         }
 
         // GET api/<ValuesController>/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            Product product = productsApi.GetById(id);
+            Product product = Datos.BuscarPorId(id);
             if (product == null)
             {
                 return NotFound();
@@ -38,8 +38,10 @@ namespace ApiProgra3.Controllers
         [HttpPost]
         public Product Post(string name,int price)
         {
-            
-            return productsApi.Create(name, price);
+
+          Product product = Datos.Crear(name, price);
+          return product;
+
 
         }
 
@@ -47,7 +49,7 @@ namespace ApiProgra3.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, string name, int price)
         {
-            Product product = productsApi.Update(id,name,price);
+            Product product = Datos.Actualizar(id,name,price);
             if (product == null)
             {
                 return NotFound();
@@ -59,7 +61,7 @@ namespace ApiProgra3.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            bool isDeleted = productsApi.Delete(id);
+            bool isDeleted = Datos.Borrar(id);
             if (!isDeleted)
             {
                 return NotFound();

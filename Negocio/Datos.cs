@@ -10,12 +10,12 @@ namespace Negocio
     {
         public static List<Product> productos = new List<Product>();
 
-        public static List<Product> GetAll()
+        public static List<Product> BuscarTodos()
         {
             return productos;
         }
 
-        public static Product Create(string Name, int Price)
+        public static Product Crear(string Name, int Price)
         {
             Random random = new Random();
             int randomId = random.Next(0, 100);
@@ -28,15 +28,15 @@ namespace Negocio
             return product;
         }
 
-       public static Product GetById(int Id)
+       public static Product BuscarPorId(int Id)
        {
-            Product product =  Datos.FindById(Id);
+            Product product = productos.FirstOrDefault(p => p.Id == Id);
             return product;
        }
 
-        public static Product? Update(int Id, string Name, int Price)
+        public static Product? Actualizar(int Id, string Name, int Price)
         {
-            Product product = Datos.FindById(Id); product.Name = Name;
+            Product product = productos.FirstOrDefault(p => p.Id == Id);
             if (product == null)
             {
                 return null;
@@ -46,22 +46,17 @@ namespace Negocio
             product.Price = Price;    
             return product;
         }
-        public static bool Delete(int Id)
+        public static bool Borrar(int Id)
         {
-            Product? product = FindById(Id);
+            Product? product = productos.FirstOrDefault(p => p.Id == Id);
             if (product == null)
             {
-                return false; // Producto no encontrado
+                return false;
             }
 
             productos.Remove(product);
-            return true; // Producto eliminado
+            return true;
         }
-
-        private static Product? FindById(int Id)
-        {
-            return productos.FirstOrDefault(p => p.Id == Id);
-        }
-
+            
     }
 }

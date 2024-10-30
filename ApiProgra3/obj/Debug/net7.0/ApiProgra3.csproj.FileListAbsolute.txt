@@ -68,4 +68,3 @@ C:\Users\LN\Downloads\apiprogra3\ApiProgra3\obj\Debug\net7.0\scopedcss\bundle\Ap
 C:\Users\LN\Downloads\apiprogra3\ApiProgra3\obj\Debug\net7.0\ApiProgra3.csproj.CopyComplete
 C:\Users\LN\Downloads\apiprogra3\ApiProgra3\obj\Debug\net7.0\ApiProgra3.genruntimeconfig.cache
 C:\Users\LN\Downloads\apiprogra3\ApiProgra3\obj\Debug\net7.0\ref\ApiProgra3.dll
-C:\Users\LN\Downloads\apiprogra3\ApiProgra3\bin\Debug\net7.0\Dapper.dll
