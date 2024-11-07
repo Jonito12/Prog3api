@@ -22,3 +22,16 @@ C:\Users\LN\Downloads\apiprogra3\Negocio\obj\Debug\net7.0\Negocio.dll
 C:\Users\LN\Downloads\apiprogra3\Negocio\obj\Debug\net7.0\refint\Negocio.dll
 C:\Users\LN\Downloads\apiprogra3\Negocio\obj\Debug\net7.0\Negocio.pdb
 C:\Users\LN\Downloads\apiprogra3\Negocio\obj\Debug\net7.0\ref\Negocio.dll
+C:\Users\jonat\Documents\Prog3api\Negocio\bin\Debug\net7.0\Negocio.deps.json
+C:\Users\jonat\Documents\Prog3api\Negocio\bin\Debug\net7.0\Negocio.dll
+C:\Users\jonat\Documents\Prog3api\Negocio\bin\Debug\net7.0\Negocio.pdb
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.AssemblyInfoInputs.cache
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.AssemblyInfo.cs
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.sourcelink.json
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.dll
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\refint\Negocio.dll
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.pdb
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\ref\Negocio.dll
+C:\Users\jonat\Documents\Prog3api\Negocio\obj\Debug\net7.0\Negocio.csproj.AssemblyReference.cache

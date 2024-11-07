@@ -16,12 +16,14 @@ namespace ApiProgra3.Controllers
         [HttpGet]
         public List<Product> Get()
         {
-            List<Product> info = Datos.BuscarTodos();
+            Datos informacion = new Datos();
+            List<Product> info = informacion.BuscarTodos();
             return info;
+
         }
 
         // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
+        /* [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             Product product = Datos.BuscarPorId(id);
@@ -30,12 +32,12 @@ namespace ApiProgra3.Controllers
                 return NotFound();
             }
             return Ok(product);
-        }
+        } */
 
 
 
         // POST api/<ValuesController>
-        [HttpPost]
+        /* [HttpPost]
         public Product Post(string name,int price)
         {
 
@@ -67,6 +69,6 @@ namespace ApiProgra3.Controllers
                 return NotFound();
             }
             return NoContent();
-        }
+        } */
     }
 }
