@@ -26,9 +26,79 @@ namespace Negocio
             }
 
             return productos;
-
         }
 
-        
+        public int Crear(string title, Product p)
+        {
+            int resultado = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(myConnectionString))
+            {
+                conn.Open();
+                string sql = "INSERT INTO Products (Title, Description, Category, Price) VALUES (@Title,@Description,@Category, @Price)";
+                resultado = conn.Execute(sql, p);
+            }
+
+            return resultado;
+        }
+
+        public Product Actualizar(int id, Product p)
+        {
+            int resultado = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(myConnectionString))
+            {
+                conn.Open();
+                string sql = "UPDATE Products SET Title = @Title, Description = @Description, Category = @Category, Price = @Price WHERE Id = @Id";
+                p.Id = id;  // Establece el ID para la actualización
+                resultado = conn.Execute(sql, p);
+            }
+
+            return p;
+        }
+
+
+
+        public int Borrar(int id)
+        {
+            int resultado = 0;
+
+            using (MySqlConnection conn = new MySqlConnection(myConnectionString))
+            {
+                conn.Open();
+                string sql = "DELETE FROM Products WHERE Id = @Id";  // Corrección en el nombre de la tabla
+                resultado = conn.Execute(sql, new { Id = id });
+            }
+
+            return resultado;
+        }
+
+
+        public Product BuscarPorId(int id)
+        {
+            Product resultado = null;
+
+            using (MySqlConnection conn = new MySqlConnection(myConnectionString))
+            {
+                conn.Open();
+                string sql = "SELECT * FROM Products WHERE Id = @Id";  
+                resultado = conn.QueryFirstOrDefault<Product>(sql, new { Id = id });
+            }
+
+            return resultado;
+        }
+
+
+        public Product Crear( Product p)
+        {
+            using (MySqlConnection conn = new MySqlConnection(myConnectionString))
+            {
+                conn.Open();
+                string sql = "INSERT INTO Products (Title, Description, Category, Price) VALUES (@Title, @Description, @Category, @Price)";
+                conn.Execute(sql, p);
+
+                return p;
+            }
+        }
     }
 }

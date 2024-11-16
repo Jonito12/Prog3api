@@ -12,7 +12,7 @@ namespace Negocio
 
         public Product() { }
 
-      /* public Product(int id, string title, string description, string category, decimal price)
+       public Product(int id, string title, string description, string category, decimal price)
         {
             Id = id;
             Title = title;
@@ -20,6 +20,6 @@ namespace Negocio
             Category = category;
             Price = price;
 
-        } */
+        } 
     }
 }

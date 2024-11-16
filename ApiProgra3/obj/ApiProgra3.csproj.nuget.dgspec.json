@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonat\\Documents\\Prog3api\\ApiProgra3\\ApiProgra3.csproj": {}
+    "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\ApiProgra3\\ApiProgra3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonat\\Documents\\Prog3api\\ApiProgra3\\ApiProgra3.csproj": {
+    "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\ApiProgra3\\ApiProgra3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonat\\Documents\\Prog3api\\ApiProgra3\\ApiProgra3.csproj",
+        "projectUniqueName": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\ApiProgra3\\ApiProgra3.csproj",
         "projectName": "ApiProgra3",
-        "projectPath": "C:\\Users\\jonat\\Documents\\Prog3api\\ApiProgra3\\ApiProgra3.csproj",
+        "projectPath": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\ApiProgra3\\ApiProgra3.csproj",
         "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonat\\Documents\\Prog3api\\ApiProgra3\\obj\\",
+        "outputPath": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\ApiProgra3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\jonat\\Documents\\Prog3api\\Negocio\\Negocio.csproj": {
-                "projectPath": "C:\\Users\\jonat\\Documents\\Prog3api\\Negocio\\Negocio.csproj"
+              "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\jonat\\Documents\\Prog3api\\Negocio\\Negocio.csproj": {
+    "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\Negocio\\Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonat\\Documents\\Prog3api\\Negocio\\Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\Negocio\\Negocio.csproj",
         "projectName": "Negocio",
-        "projectPath": "C:\\Users\\jonat\\Documents\\Prog3api\\Negocio\\Negocio.csproj",
+        "projectPath": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\Negocio\\Negocio.csproj",
         "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonat\\Documents\\Prog3api\\Negocio\\obj\\",
+        "outputPath": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",

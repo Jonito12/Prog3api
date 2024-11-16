@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sutp+RZim7g=",
+  "dgSpecHash": "A1HhXe3kY4A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonat\\Documents\\Prog3api\\Negocio\\Negocio.csproj",
+  "projectFilePath": "C:\\Users\\jonat\\OneDrive\\Escritorio\\Prog3api\\Negocio\\Negocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonat\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",

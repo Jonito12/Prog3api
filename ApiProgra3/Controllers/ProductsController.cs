@@ -22,37 +22,38 @@ namespace ApiProgra3.Controllers
 
         }
 
-        // GET api/<ValuesController>/5
-        /* [HttpGet("{id}")]
+        [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            Product product = Datos.BuscarPorId(id);
+            Datos informacion = new Datos();
+            Product product = informacion.BuscarPorId(id);  // Cambiado de Datos.BuscarPorId(id) para devolver un Product
             if (product == null)
             {
                 return NotFound();
             }
             return Ok(product);
-        } */
-
+        }
 
 
         // POST api/<ValuesController>
-        /* [HttpPost]
-        public Product Post(string name,int price)
+        [HttpPost]
+        public Product Post(string title, int price)
         {
-
-          Product product = Datos.Crear(name, price);
-          return product;
-
-
+            Datos informacion = new Datos();
+            Product product = new Product { Title = title, Price = price };  // Creación del objeto Product
+            Product createdProduct = informacion.Crear(product);
+            return createdProduct;
         }
+
 
         // PUT api/<ValuesController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, string name, int price)
+        public IActionResult Put(int id, string title, int price)
         {
-            Product product = Datos.Actualizar(id,name,price);
-            if (product == null)
+            Datos informacion = new Datos();
+            Product product = new Product { Title = title, Price = price };
+            Product updateproduct = informacion.Actualizar(id, product);
+            if (updateproduct == null)
             {
                 return NotFound();
             }
@@ -63,12 +64,13 @@ namespace ApiProgra3.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            bool isDeleted = Datos.Borrar(id);
-            if (!isDeleted)
+            Datos informacion = new Datos();
+            int product = informacion.Borrar(id);
+            if (product == 0)
             {
                 return NotFound();
             }
-            return NoContent();
-        } */
+            return Ok("El producto fue eliminado correctamente."); ;
+        }
     }
 }
